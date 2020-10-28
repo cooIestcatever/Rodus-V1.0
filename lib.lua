@@ -67,7 +67,7 @@ function CreateMain(title)
 	end)
 	function onKeyPress(inputObject, gameProcessedEvent)
 		if inputObject.KeyCode == Enum.KeyCode.RightControl then
-			if game.CoreGui[title].Top.Visible == false then ggame.CoreGui[title].Top.Visible = true
+			if game.CoreGui[title].Top.Visible == false then game.CoreGui[title].Top.Visible = true
 			else game.CoreGui[title].Top.Visible = false end
 		end
 	end
