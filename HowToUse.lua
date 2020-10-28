@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/stitchTheElite/Rodus-V1.0/main/lib.lua", true))() -- put this first above everything (important!)
+
 CreateMain(title<string/number>) -- create main
 CreateMain("Rodus") -- example main
 
