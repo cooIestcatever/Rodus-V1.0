@@ -58,5 +58,5 @@ CreateTextBox(tabs['Example Tab 1'], "A Text Box", "Text Goes Here!",function(ar
 	print("Text: "..arg) -- arg is used to check the text
 end)
 
--- to open/close gui press right ctrl
+-- to destroy the gui press right ctrl
 -- if you have further questions, ask away: stitch the elite#9709
