@@ -1,5 +1,5 @@
 function CreateMain(title)
-	local destroyIfExist = game.Players.LocalPlayer.PlayerGui:GetChildren()
+	local destroyIfExist = game.CoreGui:GetChildren()
 	for index, destroyIfExist in pairs(destroyIfExist) do
 		if destroyIfExist.Name == title then
 			print("Destroyed "..tostring(title)..": Already existed")
@@ -14,7 +14,7 @@ function CreateMain(title)
 	local Minimize = Instance.new("TextButton")
 
 	Rodus.Name = tostring(title)
-	Rodus.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	Rodus.Parent = game:WaitForChild("CoreGui")
 	Rodus.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	Top.Name = "Top"
@@ -67,8 +67,8 @@ function CreateMain(title)
 	end)
 	function onKeyPress(inputObject, gameProcessedEvent)
 		if inputObject.KeyCode == Enum.KeyCode.RightControl then
-			if game.Players.LocalPlayer.PlayerGui[title].Top.Visible == false then game.Players.LocalPlayer.PlayerGui[title].Top.Visible = true
-			else game.Players.LocalPlayer.PlayerGui[title].Top.Visible = false end
+			if game.CoreGui[title].Top.Visible == false then ggame.CoreGui[title].Top.Visible = true
+			else game.CoreGui[title].Top.Visible = false end
 		end
 	end
 
@@ -267,7 +267,7 @@ function CreateMain(title)
 					SideDrop.Arrow.TextColor3 = Color3.new(255, 255, 255)
 					DropContainer.Visible = false
 				else 
-					local allTabs = game.Players.LocalPlayer.PlayerGui[title].Top.Container:GetDescendants()
+					local allTabs = game.CoreGui[title].Top.Container:GetDescendants()
 					for index, allTabs in pairs(allTabs) do
 						if allTabs.Name == "DropContainer" then
 							allTabs.Visible = false
@@ -352,7 +352,7 @@ function CreateMain(title)
 					SideDrop.Arrow.TextColor3 = Color3.new(255, 255, 255)
 					DropContainer.Visible = false
 				else 
-					local allTabs = game.Players.LocalPlayer.PlayerGui[title].Top.Container:GetDescendants()
+					local allTabs = game.CoreGui[title].Top.Container:GetDescendants()
 					for index, allTabs in pairs(allTabs) do
 						if allTabs.Name == "DropContainer" then
 							allTabs.Visible = false
@@ -475,7 +475,7 @@ function CreateMain(title)
 			Hover.BackgroundTransparency = 1.000
 			Hover.Size = UDim2.new(0, 209, 0, 32)
 			Hover.MouseEnter:Connect(function()
-				local allTabs = game.Players.LocalPlayer.PlayerGui[tostring(title)].Top.Container:GetDescendants()
+				local allTabs = game.CoreGui[tostring(title)].Top.Container:GetDescendants()
 				for index, allTabs in pairs(allTabs) do
 					if allTabs.Name == "Side" then
 						allTabs.Visible = false
@@ -504,5 +504,5 @@ function CreateMain(title)
 			parent.TabContainer.Size = UDim2.new(0, parent.TabContainer.UIListLayout.AbsoluteContentSize.X, 0, parent.TabContainer.UIListLayout.AbsoluteContentSize.Y)
 		end
 	end
-	tabs = game.Players.LocalPlayer.PlayerGui[title].Top.Container
+	tabs = game.CoreGui[title].Top.Container
 end
