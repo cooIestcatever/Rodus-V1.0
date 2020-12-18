@@ -20,7 +20,7 @@ function CreateMain(title)
 	Top.Name = "Top"
 	Top.Parent = Rodus
 	Top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	Top.BackgroundTransparency = 0.500
+	Top.BackgroundTransparency = 0.7
 	Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Top.BorderSizePixel = 4
 	Top.Position = UDim2.new(0, 15, 0, 15)
@@ -29,7 +29,7 @@ function CreateMain(title)
 	Title.Name = "Title"
 	Title.Parent = Top
 	Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	Title.BackgroundTransparency = 0.350
+	Title.BackgroundTransparency = 0.7
 	Title.BorderSizePixel = 0
 	Title.Size = UDim2.new(0, 193, 0, 27)
 	Title.Font = Enum.Font.JosefinSans
@@ -41,7 +41,7 @@ function CreateMain(title)
 	Container.Name = "Container"
 	Container.Parent = Top
 	Container.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	Container.BackgroundTransparency = 0.500
+	Container.BackgroundTransparency = 0.7
 	Container.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Container.BorderSizePixel = 4
 	Container.Position = UDim2.new(0, 0, 1.29629624, 0)
@@ -107,7 +107,7 @@ function CreateMain(title)
 		TabContainer.Name = "TabContainer"
 		TabContainer.Parent = Tab
 		TabContainer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		TabContainer.BackgroundTransparency = 0.500
+		TabContainer.BackgroundTransparency = 0.7
 		TabContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		TabContainer.BorderSizePixel = 4
 		TabContainer.Position = UDim2.new(1.0569948, 0, 0, 0)
@@ -297,10 +297,10 @@ function CreateMain(title)
 			DropContainer.Name = "DropContainer"
 			DropContainer.Parent = SideDrop
 			DropContainer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-			DropContainer.BackgroundTransparency = 0.500
+			DropContainer.BackgroundTransparency = 0.7
 			DropContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			DropContainer.BorderSizePixel = 4
-			DropContainer.Position = UDim2.new(1.08290148, 0, 0, 0)
+			DropContainer.Position = UDim2.new(1.055, 0, 0, 0)
 			DropContainer.Size = UDim2.new(0, 193, 0, 72)
 			DropContainer.Visible = false
 
@@ -382,10 +382,10 @@ function CreateMain(title)
 			DropContainer.Name = "DropContainer"
 			DropContainer.Parent = SideDrop
 			DropContainer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-			DropContainer.BackgroundTransparency = 0.500
+			DropContainer.BackgroundTransparency = 0.7
 			DropContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			DropContainer.BorderSizePixel = 4
-			DropContainer.Position = UDim2.new(1.08290148, 0, 0, 0)
+			DropContainer.Position = UDim2.new(1.055, 0, 0, 0)
 			DropContainer.Size = UDim2.new(0, 193, 0, 72)
 			DropContainer.Visible = false
 
@@ -456,10 +456,10 @@ function CreateMain(title)
 			Side.Name = "Side"
 			Side.Parent = TextBox
 			Side.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-			Side.BackgroundTransparency = 0.500
+			Side.BackgroundTransparency = 0.7
 			Side.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Side.BorderSizePixel = 4
-			Side.Position = UDim2.new(1.08290148, 0, 0, 0)
+			Side.Position = UDim2.new(1.055, 0, 0, 0)
 			Side.Size = UDim2.new(0, 193, 0, 24)
 			Side.Visible = false
 			Side.MouseEnter:Connect(function()
