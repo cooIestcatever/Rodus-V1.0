@@ -177,7 +177,7 @@ function CreateMain(title)
             local Button = Instance.new("TextButton")
             local Note = Instance.new("TextLabel")
 
-            Button.Name = buttonText
+            Button.Name = "Button"
             Button.Parent = parent.TabContainer
             Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
             Button.BackgroundTransparency = 1.000
@@ -219,7 +219,7 @@ function CreateMain(title)
         function CreateLabel(parent, labelText, color3)
             local Label = Instance.new("TextLabel")
 
-            Label.Name = labelText
+            Label.Name = "Label"
             Label.Parent = parent.TabContainer
             Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
             Label.BackgroundTransparency = 1.000
@@ -461,7 +461,7 @@ function CreateMain(title)
             local Box = Instance.new("TextBox")
             local Hover = Instance.new("Frame")
 
-            TextBox.Name = buttonText
+            TextBox.Name = "buttonText"
             TextBox.Parent = parent.TabContainer
             TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
             TextBox.BackgroundTransparency = 1.000
