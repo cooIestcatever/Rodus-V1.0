@@ -14,7 +14,7 @@ function CreateMain(title)
 	local Minimize = Instance.new("TextButton")
 
 	Rodus.Name = tostring(title)
-    syn.protect_gui(Rodus)
+        syn.protect_gui(Rodus)
 	Rodus.Parent = game:WaitForChild("CoreGui")
 	Rodus.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
